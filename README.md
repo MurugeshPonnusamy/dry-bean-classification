@@ -1,4 +1,4 @@
-# Dry Bean Classification — ML Assignment 2
+# Dry Bean Classification - ML Assignment 2
 
 ## a. Problem Statement
 
@@ -28,9 +28,7 @@ Exact duplicate rows are removed before model training.
 
 ## c. GitHub Repository Link
 
-Add your GitHub repository link here after uploading the project:
-
-`https://github.com/MurugeshPonnusamy/dry-bean-classification/`
+https://github.com/MurugeshPonnusamy/dry-bean-classification/
 
 ## d. Models Used
 
@@ -49,33 +47,33 @@ Logistic Regression and KNN use StandardScaler because they are sensitive to dif
 | ML Model Name | Accuracy | AUC | Precision | Recall | F1 | MCC |
 |---|---:|---:|---:|---:|---:|---:|
 | Logistic Regression | 0.9192 | 0.9934 | 0.9197 | 0.9192 | 0.9193 | 0.9023 |
-| Decision Tree | 0.8966 | 0.9363 | 0.8965 | 0.8966 | 0.8964 | 0.8750 |
+| Decision Tree | 0.8955 | 0.9357 | 0.8954 | 0.8955 | 0.8953 | 0.8737 |
 | KNN | 0.9155 | 0.9811 | 0.9163 | 0.9155 | 0.9157 | 0.8978 |
 | Naive Bayes | 0.7630 | 0.9644 | 0.7647 | 0.7630 | 0.7607 | 0.7143 |
-| Random Forest | 0.9195 | 0.9921 | 0.9196 | 0.9195 | 0.9195 | 0.9026 |
+| Random Forest | 0.9192 | 0.9919 | 0.9192 | 0.9192 | 0.9191 | 0.9022 |
 
 ### Model Performance Observations
 
 **Logistic Regression:**  
-Logistic Regression produced very strong results, with 91.92% accuracy and the highest AUC score of 0.9934. Its weighted F1 score was 0.9193 and MCC was 0.9023, showing strong multiclass classification performance.
+Logistic Regression produced the strongest overall results. It achieved 91.92% accuracy, the highest AUC score of 0.9934, the highest precision of 0.9197, the highest weighted F1 score of 0.9193, and the highest MCC of 0.9023. These results indicate strong and well-balanced multiclass classification performance.
 
 **Decision Tree:**  
-The Decision Tree achieved 89.66% accuracy and an F1 score of 0.8964. It performed reasonably well but was weaker than Logistic Regression, KNN and Random Forest. Its lower AUC and MCC also indicate that the single-tree model was less consistent than the strongest models.
+The Decision Tree achieved 89.55% accuracy and an F1 score of 0.8953. It performed reasonably well but was weaker than Logistic Regression, KNN, and Random Forest. Its AUC of 0.9357 and MCC of 0.8737 were also lower than those of the strongest models.
 
 **K-Nearest Neighbors:**  
-KNN achieved 91.55% accuracy and an F1 score of 0.9157. After feature scaling, KNN performed competitively and was close to Logistic Regression and Random Forest, although its AUC and MCC were slightly lower.
+KNN achieved 91.55% accuracy and an F1 score of 0.9157. After feature scaling, KNN performed competitively and remained close to Logistic Regression and Random Forest, although its AUC and MCC were slightly lower.
 
 **Naive Bayes:**  
-Gaussian Naive Bayes had the weakest overall classification performance, with 76.30% accuracy, an F1 score of 0.7607 and MCC of 0.7143. Although its AUC remained relatively high at 0.9644, its predicted class labels were considerably less accurate than the other models.
+Gaussian Naive Bayes had the weakest overall classification performance, with 76.30% accuracy, an F1 score of 0.7607, and MCC of 0.7143. Although its AUC remained relatively high at 0.9644, its predicted class labels were considerably less accurate than those of the other models.
 
 **Random Forest:**  
-Random Forest achieved the highest accuracy of 91.95%, the highest weighted F1 score of 0.9195 and the highest MCC of 0.9026. Its AUC of 0.9921 was also very strong and only slightly below Logistic Regression.
+Random Forest also performed very strongly, achieving 91.92% accuracy, an AUC of 0.9919, an F1 score of 0.9191, and an MCC of 0.9022. Its accuracy and recall matched Logistic Regression, but Logistic Regression was slightly better in AUC, precision, F1, and MCC.
 
 ### Overall Winner
 
-**Random Forest is selected as the overall winner.**
+**Logistic Regression is selected as the overall winner.**
 
-It achieved the highest Accuracy, weighted F1 score and MCC among the five models. Logistic Regression was extremely close and produced the highest AUC and marginally higher Precision, but Random Forest had the strongest overall balance across the main classification metrics.
+It achieved the best overall balance across the evaluation metrics, including the highest AUC, precision, weighted F1 score, and MCC, while tying Random Forest for the highest accuracy and recall. Random Forest was extremely close, but Logistic Regression was marginally stronger across the complete set of metrics.
 
 ## Streamlit Application
 
@@ -90,26 +88,24 @@ The Streamlit application provides:
 
 ### Live Streamlit App Link
 
-Add the deployed Streamlit Community Cloud URL here:
-
-`https://dry-bean-classification-murugeshp.streamlit.app/`
+https://dry-bean-classification-murugeshp.streamlit.app/
 
 ## Project Structure
 
 ```text
 project-folder/
-│
-├── app.py
-├── requirements.txt
-├── README.md
-├── test_data.csv
-├── Dry_Bean_ML_Assignment.ipynb
-└── model/
-    ├── logistic_regression.pkl
-    ├── decision_tree.pkl
-    ├── knn.pkl
-    ├── naive_bayes.pkl
-    └── random_forest.pkl
+|
+|-- app.py
+|-- requirements.txt
+|-- README.md
+|-- test_data.csv
+|-- Dry_Bean_ML_Assignment.ipynb
+`-- model/
+    |-- logistic_regression.pkl
+    |-- decision_tree.pkl
+    |-- knn.pkl
+    |-- naive_bayes.pkl
+    `-- random_forest.pkl
 ```
 
 ## Running the App Locally
