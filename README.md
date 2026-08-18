@@ -30,7 +30,7 @@ Exact duplicate rows are removed before model training.
 
 Add your GitHub repository link here after uploading the project:
 
-`YOUR_GITHUB_REPOSITORY_LINK`
+`https://github.com/MurugeshPonnusamy/dry-bean-classification/`
 
 ## d. Models Used
 
@@ -92,7 +92,7 @@ The Streamlit application provides:
 
 Add the deployed Streamlit Community Cloud URL here:
 
-`YOUR_STREAMLIT_APP_LINK`
+`https://dry-bean-classification-murugeshp.streamlit.app/`
 
 ## Project Structure
 
